@@ -112,6 +112,11 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
   color: #fff;
 }
 
+.form-control {
+  border: 2px solid transparent;
+  background-color: $gray-700;
+}
+
 // Navs ========================================================================
 
 .nav-tabs,
