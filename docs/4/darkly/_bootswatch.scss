@@ -7,6 +7,12 @@
 $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic" !default;
 @import url($web-font-path);
 
+// Util ========================================================================
+
+.bg-black {
+  background-color: $black !important;
+}
+
 // Navbar ======================================================================
 
 .bg-primary {
@@ -15,14 +21,30 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
    }
 }
 
-.bg-dark {
-  background-color: $success !important;
+
+.bg-success {
   &.navbar-dark .navbar-nav {
 	.nav-link:focus,
 	.nav-link:hover,
 	.active > .nav-link {
 		color: $primary !important;
 	}
+  }
+}
+
+.bg-light {
+  &.navbar-light {
+    .navbar-brand {
+      color: $dark !important;
+    }    
+    .nav-link {
+      color: $dark !important;
+    }
+    .nav-link:focus,
+    .nav-link:hover,
+    .active > .nav-link {
+      color: $white !important;
+    }
   }
 }
 
