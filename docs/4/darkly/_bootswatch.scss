@@ -131,12 +131,20 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
 // Forms =======================================================================
 
 .input-group-addon {
-  color: #fff;
+  color: $white;
+  background-color: $gray-600;
 }
 
 .form-control {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-color: $gray-700;
+  color: $white !important;
+  &:focus {
+    color: $dark !important;
+  }
+  &.border-default {
+    border: 1px solid $gray-700;
+  }
 }
 
 // Navs ========================================================================
